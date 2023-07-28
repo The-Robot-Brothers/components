@@ -1,4 +1,4 @@
-import { Button } from '~/components/Button'
+import { FormMessage } from '~/components/FormMessage'
 
 export default function Home () {
   return (
@@ -9,9 +9,7 @@ export default function Home () {
 
       <p className='text-center mb-4 text-primary-100'>This is a test of colors with tailwind</p>
 
-      <Button.Root variant='primary'>Primary</Button.Root>
-      <Button.Root variant='secondary'>Secondary</Button.Root>
-      <Button.Root variant='outline'>Outline</Button.Root>
+      <FormMessage />
     </main>
   )
 }
