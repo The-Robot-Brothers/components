@@ -2,33 +2,16 @@ import { Button } from '~/components/Button'
 
 export default function Home () {
   return (
-    <main className='h-screen flex items-center justify-center gap-2'>
-      <div className='grid gap-2'>
-        <Button.Root loading>
-          <Button.Icon icon='Plus' />
-          Loading
-        </Button.Root>
+    <main className='bg-primary-900 h-[calc(100vh-8rem)] p-4 flex flex-col items-center-center gap-2'>
+      <h1 className='font-black text-transparent text-7xl bg-clip-text bg-gradient-to-t from-primary-400 to-white text-center'>
+        Custom Theme
+      </h1>
 
-        <Button.Root>
-          <Button.Icon icon='Plus' />
-          Primary
-        </Button.Root>
+      <p className='text-center mb-4 text-primary-100'>This is a test of colors with tailwind</p>
 
-        <Button.Root disabled>
-          <Button.Icon icon='Plus' />
-          Disabled
-        </Button.Root>
-
-        <Button.Root variant='secondary'>
-          <Button.Icon icon='Plus' />
-          Secondary
-        </Button.Root>
-
-        <Button.Root variant='outline'>
-          <Button.Icon icon='Plus' />
-          Outline
-        </Button.Root>
-      </div>
+      <Button.Root variant='primary'>Primary</Button.Root>
+      <Button.Root variant='secondary'>Secondary</Button.Root>
+      <Button.Root variant='outline'>Outline</Button.Root>
     </main>
   )
 }

@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes animate {
+/* @keyframes animate {
   0%, 100% {
     stroke-dashoffset: 110;
   }
@@ -12,4 +12,4 @@
   50.1% {
     stroke-dashoffset: 220;
   }
-}
+} */
