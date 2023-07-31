@@ -11,7 +11,7 @@ export function FormMessage () {
   console.log({ name, password })
 
   return (
-    <form className='grid gap-2'>
+    <form className='grid gap-2 w-full max-w-2xl'>
       <Input.Root id='name'>
         <Input.Main>
           <Input.Field id='name' onInputChange={setName} />
